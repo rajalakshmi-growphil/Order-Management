@@ -1,0 +1,258 @@
+:root {
+    --background-color: #f6f4fa;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --secondary-text: #888;
+    --border-radius: 16px;
+    --shadow: 0px 8px 16px rgba(6, 6, 6, 0.217);
+    --status-pending: #f69c29;
+    --status-confirmed: #00b894;
+    --status-out-for-delivery: #3d7af4;
+    --status-delivered: #00c853;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+}
+
+.orders-title {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #F7F3FE;
+    color: #191919;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+
+.order-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+}
+
+.order-card:hover {
+    box-shadow: 0px 12px 24px rgba(6, 6, 6, 0.217);
+}
+
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    flex-wrap: wrap;
+}
+
+.order-status-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0C2638;
+}
+
+.status-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.order-status {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.order-date {
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+    text-align: right;
+}
+
+
+.order-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    gap: 16px;
+}
+
+.items-list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.item-name {
+    font-weight: 500;
+    color: #0C2638;
+    font-size: 14px;
+}
+
+.item-unit {
+    color: var(--secondary-text);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.item-qty {
+    background-color: #FEF6F5;
+    border-radius: 100px;
+    padding: 4px 12px;
+    color: #5D399B;
+    font-size: 12px;
+}
+
+
+.total-price-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.total-label {
+    color: #000;
+    font-size: 12px;
+}
+
+.total-amount {
+    font-size: 24px;
+    color: #000;
+}
+
+
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-message {
+    font-size: 10px;
+    font-weight: 600;
+    color: #191919;
+}
+
+.action-btn {
+    background-color: #DDC9FF;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.action-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.action-btn:hover {
+    opacity: 0.95;
+}
+
+
+@media (min-width: 768px) {
+    .orders-container {
+        padding: 32px;
+        gap: 14px;
+
+    }
+
+
+    .order-card {
+        background: var(--card-bg);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        gap: 2px;
+    }
+
+    .status-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .order-status {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .order-date {
+        font-size: 15px;
+        font-weight: 400;
+        color: #000;
+        text-align: right;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .footer-message {
+        font-size: 20px;
+        font-weight: 600;
+        color: #191919;
+    }
+
+    .action-btn {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .action-btn img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .item-qty {
+        width: auto;
+    }
+
+    .order-footer {
+        flex-wrap: nowrap;
+    }
+}

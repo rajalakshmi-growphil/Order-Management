@@ -1,0 +1,41 @@
+/* Skeleton Loader Styles */
+.order-skeleton-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shimmer {
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 8px;
+}
+
+.skeleton-header {
+  width: 40%;
+  height: 20px;
+  margin-bottom: 16px;
+}
+
+.skeleton-items {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 16px;
+}
+
+.skeleton-footer {
+  width: 30%;
+  height: 20px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}

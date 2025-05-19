@@ -1,0 +1,33 @@
+.notfound-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 16px;
+}
+
+.notfound-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  gap: 16px;
+}
+
+.notfound-title {
+  color: #191919;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.notfound-message {
+  color: var(--secondary-text);
+  font-size: 14px;
+  max-width: 400px;
+  margin: 0;
+}
